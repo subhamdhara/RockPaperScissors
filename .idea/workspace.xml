@@ -64,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620909362210</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed the README.md">
+      <created>1620923255106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620923255106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,9 +84,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I changed the break of it. You need to press q for quit" />
-    <option name="LAST_COMMIT_MESSAGE" value="I changed the break of it. You need to press q for quit" />
+    <MESSAGE value="Changed the README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the README.md" />
   </component>
 </project>
