@@ -1,5 +1,5 @@
 import random
-import keyboard
+
 import time
 
 
