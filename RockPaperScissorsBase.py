@@ -1,19 +1,47 @@
 import random
+import keyboard
+import time
 
-while True:
-    try:
-        i = input("Put s for scissors, r for rock, p for paper and q for quit: ")
 
-    except:
-        break
+def loader():
+    ca = ["\ ", "| ", "/ ", "- "]
+    print("Deciding:  ", end=" ")
+    for i in range(1, 5):
+        for l in range(1, 3):
+            time.sleep(0.25)
+        print("\b\b" + ca[i - 1], end="")
+        # print(".", end="")
+        time.sleep(0.25)
+        # print('\b\b| ', end="")
+        # time.sleep(0.25)
+        # print("\b\b/ ", end="")
+        # time.sleep(0.25)
+        # print("\b\b- ", end="")
+    print("\b" * 15, end="")
 
+
+def start():
     l = ["s", "r", 'p']
-    r = random.choice(l)
-    if r == i:
-        print(f"computer got {r} and you chose {i} its a draw")
-    if r == "s" and i == "r" or r == "r" and i == "p" or r == "p" and i == "s":
-        print(f"computer got {r} and you chose {i} you win")
-    if r == "r" and i == "s" or r == "p" and i == "r" or r == "s" and i == "p":
-        print(f"computer got {r} and you chose {i} computer wins")
-    if i == "q":
-        break
+    while True:
+
+        try:
+            player = input("Put s for scissors, r for rock, p for paper and q for quit: ")
+        except:
+            break
+
+        loader()
+
+        comp = random.choice(l)
+
+        if comp == player:
+            print(f"computer got {comp} and you chose {player} its a draw")
+        if comp == "s" and player == "r" or comp == "r" and player == "p" or comp == "p" and player == "s":
+            print(f"computer got {comp} and you chose {player} you win")
+        if comp == "r" and player == "s" or comp == "p" and player == "r" or comp == "s" and player == "p":
+            print(f"computer got {comp} and you chose {player} computer wins")
+
+        if player == "q":
+            break
+
+
+start()
