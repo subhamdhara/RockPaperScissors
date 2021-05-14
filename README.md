@@ -1,5 +1,5 @@
 # RockPaperScissors
-___
+
 Play Rock Paper Scissors
 
 - r for rock
