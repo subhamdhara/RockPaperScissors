@@ -4,11 +4,11 @@ import time
 
 def loader():
     ca = ["\ ", "| ", "/ ", "- "]
-    print("Deciding:  ", end=" ")
+    print("Deciding:"+" "*len(ca[0]), end=" ")
     for i in range(1, 5):
         for l in range(1, 3):
             time.sleep(0.25)
-        print("\b\b" + ca[i - 1], end="")
+        print("\b"*len(ca[i-1]) + ca[i - 1], end="")
         # print(".", end="")
         time.sleep(0.25)
         # print('\b\b| ', end="")
@@ -28,6 +28,9 @@ def start():
         except:
             break
 
+        if player == "q":
+            break
+
         loader()
 
         comp = random.choice(l)
@@ -39,8 +42,7 @@ def start():
         if comp == "r" and player == "s" or comp == "p" and player == "r" or comp == "s" and player == "p":
             print(f"computer got {comp} and you chose {player} computer wins")
 
-        if player == "q":
-            break
+
 
 
 start()
